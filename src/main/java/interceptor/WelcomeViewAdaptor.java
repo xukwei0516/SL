@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 设置APP默认欢迎页,该路径会被拦截器拦截,所以拦截器中要放行
  *  相当于web.xml文件中的欢迎页
     第三次提交
+    第四修改
  */
 @Configuration
 public class WelcomeViewAdaptor implements WebMvcConfigurer {
