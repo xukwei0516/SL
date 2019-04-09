@@ -28,6 +28,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     @Transactional(isolation = Isolation.DEFAULT,propagation = Propagation.REQUIRED)
     @Override
     public int addAuthority(Authority authority) throws Exception {
+
         return authorityMapper.addAuthority(authority);
     }
     @Transactional(isolation = Isolation.DEFAULT,propagation = Propagation.REQUIRED)
