@@ -29,9 +29,9 @@ public class SysInterceptor extends HandlerInterceptorAdapter {
 
         String allowedUrl = redisAPI.get("Fun"+sessionUser.getRoleId());
         //访问路径
-        String forwardUrl = request.getRequestURI();
+        String requestUrl = request.getRequestURI();
 
-        if(allowedUrl.indexOf(forwardUrl)>0){
+        if(allowedUrl.indexOf(requestUrl)>0){
             return true;
         }else{
             request.getRequestDispatcher("/WEB-INF/pages/401.jsp").forward(request,response );

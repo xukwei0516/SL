@@ -35,7 +35,7 @@ public class SysAdaptor implements WebMvcConfigurer {
         interceptor.excludePathPatterns("/login.html");
         interceptor.excludePathPatterns("/main.html");
         interceptor.excludePathPatterns("/statics/**");
-        interceptor.excludePathPatterns("/index.html");
+        interceptor.excludePathPatterns("/");
 
     }
 }

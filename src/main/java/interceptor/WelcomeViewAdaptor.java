@@ -14,7 +14,7 @@ public class WelcomeViewAdaptor implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         //访问/index.html时,直接跳转到index.jsp
-        registry.addViewController("/index.html").setViewName("index");
+        registry.addViewController("/").setViewName("index");
 
     }
 }
